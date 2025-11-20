@@ -1,4 +1,7 @@
-A = [1,-5,2,-8,-4]
-for i in A:
-    if i < 0:
-        print(i)
+def fib(n):
+    if n <= 1:
+        return n
+    return fib(n-1) + fib(n-2)
+
+n = int(input())
+print(fib(n))

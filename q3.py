@@ -1,9 +1,8 @@
-A = [1,2,3,4,5]
-mx = A[0]
-mn = A[0]
-for i in A:
-    if i > mx:
-        mx = i
-    if i < mn:
-        mn = i
-print(mx, mn)
+def p(n):
+    if n == 0:
+        return
+    p(n-1)
+    print(n, end=" ")
+
+n = int(input())
+p(n)

@@ -1,6 +1,7 @@
-A = [1,2,3,2,1]
-B = 3
-Arr = []
-for i in A:
-    Arr.append(i + B)
-print(Arr)
+def f(n):
+    if n <= 1:
+        return 1
+    return n * f(n-1)
+
+n = int(input())
+print(f(n))
